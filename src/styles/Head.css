@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  background-color: #65c18c;
+  box-shadow: 66px -54px 0px -62px
+    rgba(15, 15, 15, 0.72) inset;
+  -webkit-box-shadow: 66px -54px 0px -62px
+    rgba(15, 15, 15, 0.72) inset;
+  -moz-box-shadow: 66px -54px 0px -62px
+    rgba(15, 15, 15, 0.72) inset;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.button {
+  transition-duration: 0.4s;
+  margin: 5px;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.button:hover {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  cursor: pointer;
+}
