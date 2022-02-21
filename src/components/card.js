@@ -1,13 +1,21 @@
-import axios from 'axios';
+import React from 'react';
+import '../styles/Card.css';
 
-export default function card() {
-  const getData = async () => {
-    const { data } = await axios.get(
-      'https://reqres.in/api/users?page=2'
-    );
-    console.log(data.data);
-  };
+export default function Card(props) {
+  const { cardDetails } = props;
 
-  getData();
-  return <div>card</div>;
+  const { name, DP, description } =
+    cardDetails;
+
+  return (
+    <div className='card'>
+      <h4>{name}</h4>
+      <img
+        src={DP}
+        alt=''
+        height={100}
+      />
+      <p>{description}</p>
+    </div>
+  );
 }
